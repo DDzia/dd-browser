@@ -8,12 +8,19 @@ export class Tree {
    * @memberof Tree
    */
   public static isChild(root: HTMLElement, toCheck: HTMLElement) {
-    let cursorElement: HTMLElement | null = toCheck;
+    if(!(root instanceof HTMLElement) || !(toCheck instanceof HTMLElement)) {
+      return false;
+    }
+
+    let cursorElement: HTMLElement = toCheck;
     while (cursorElement !== document.body) {
-        if (cursorElement === null || cursorElement === root) {
+        if (cursorElement === root) {
             return true;
         }
-        cursorElement = cursorElement.parentElement as HTMLElement;
+        if(!(cursorElement.parentElement instanceof HTMLElement)) {
+          return false;
+        }
+        cursorElement = cursorElement.parentElement;
     }
     return false;
   }

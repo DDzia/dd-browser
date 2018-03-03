@@ -4,7 +4,7 @@
   "description": "Browser helpers package",
   "scripts": {
     "build": "tsc",
-    "test": "npm run build && echo 1"
+    "test": "karma start"
   },
   "repository": {
     "type": "git",
@@ -21,7 +21,19 @@
     "url": "https://github.com/derkachdeveloper/dd-browser/issues"
   },
   "homepage": "https://github.com/derkachdeveloper/dd-browser#readme",
-  "devDependencies": {},
+  "devDependencies": {
+    "@types/chai": "^4.1.2",
+    "@types/mocha": "^2.2.48",
+    "chai": "^4.1.2",
+    "karma": "^2.0.0",
+    "karma-chai": "^0.1.0",
+    "karma-mocha": "^1.3.0",
+    "karma-mocha-reporter": "^2.2.5",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "karma-typescript": "^3.0.12",
+    "mocha": "^5.0.1",
+    "typescript": "^2.7.2"
+  },
   "directories": {
     "lib": "./src"
   }
