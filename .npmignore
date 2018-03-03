@@ -1,0 +1,8 @@
+.git
+npm-debug.log
+node_modules
+src
+tsconfig.json
+package-lock.json
+.travis
+.gitignore
