@@ -60,3 +60,6 @@ typings/
 
 # compiled directory
 dist
+
+#npm
+package-lock.json

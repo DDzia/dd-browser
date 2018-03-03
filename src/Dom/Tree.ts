@@ -7,8 +7,8 @@ export class Tree {
    * @returns is child or not boolean value.
    * @memberof Tree
    */
-  public static isChild(root: HTMLElement, toCheck: HTMLElement) {
-    if(!(root instanceof HTMLElement) || !(toCheck instanceof HTMLElement)) {
+  static isChild(root: HTMLElement, toCheck: HTMLElement) {
+    if (!(root instanceof HTMLElement) || !(toCheck instanceof HTMLElement)) {
       return false;
     }
 
@@ -17,7 +17,7 @@ export class Tree {
         if (cursorElement === root) {
             return true;
         }
-        if(!(cursorElement.parentElement instanceof HTMLElement)) {
+        if (!(cursorElement.parentElement instanceof HTMLElement)) {
           return false;
         }
         cursorElement = cursorElement.parentElement;
