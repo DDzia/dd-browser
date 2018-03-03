@@ -37,17 +37,26 @@ describe("Tree", () => {
     });
 
     it("Is not child", () => {
+      // act
       const result: boolean = Tree.isChild(root, child);
+
+      // assert
       assert(!result);
     });
 
     it("Invalid child", () => {
+      // act
       const result: boolean = Tree.isChild(root, null as any);
+
+      // assert
       assert(!result);
     });
 
     it("Invalid parent", () => {
+      // act
       const result: boolean = Tree.isChild(null as any, child);
+
+      // asert
       assert(!result);
     });
   });
