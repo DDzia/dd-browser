@@ -1,0 +1,28 @@
+{
+  "name": "dd-browser",
+  "version": "1.0.0",
+  "description": "Browser helpers package",
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && echo 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/derkachdeveloper/dd-browser.git"
+  },
+  "keywords": [
+    "typesctipt",
+    "browser",
+    "js"
+  ],
+  "author": "Denis Derkach",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/derkachdeveloper/dd-browser/issues"
+  },
+  "homepage": "https://github.com/derkachdeveloper/dd-browser#readme",
+  "devDependencies": {},
+  "directories": {
+    "lib": "./src"
+  }
+}
