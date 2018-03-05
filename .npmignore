@@ -1,7 +1,9 @@
-.git
-npm-debug.log
 node_modules
 src
+docs
+
+.git
+npm-debug.log
 tsconfig.json
 package-lock.json
 .travis

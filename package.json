@@ -5,7 +5,8 @@
   "scripts": {
     "build": "tsc",
     "lint": "tslint -c tslint.json 'src/**/*.ts'",
-    "test": "npm run lint && karma start"
+    "test": "npm run lint && karma start",
+    "docs": "typedoc --out docs/ src/ --module commonjs --exclude **/*.spec.ts --mode modules"
   },
   "repository": {
     "type": "git",
@@ -37,6 +38,6 @@
     "typescript": "^2.7.2"
   },
   "directories": {
-    "lib": "./src"
+    "lib": "./dist"
   }
 }

@@ -1,3 +1,8 @@
+/**
+ * Manage DOM tree helpers.
+ * @export
+ * @class Tree
+ */
 export class Tree {
   /**
    * Detect if some HTML element is child on any level.
