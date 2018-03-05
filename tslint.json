@@ -6,7 +6,11 @@
     "jsRules": {},
     "rules": {
         "eofline": false,
-        "member-access": [true, "no-public"]
+        "member-access": [true, "no-public"],
+        "quotemark": [
+          true,
+          "single"
+        ]
     },
     "rulesDirectory": []
 }

@@ -38,6 +38,7 @@
     "typescript": "^2.7.2"
   },
   "directories": {
-    "lib": "./dist"
-  }
+    "lib": "dist"
+  },
+  "main": "dist/index.js"
 }
