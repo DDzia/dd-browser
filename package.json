@@ -3,7 +3,7 @@
   "version": "1.0.3",
   "description": "Browser helpers package",
   "scripts": {
-    "build": "tsc",
+    "build": "npm run lint && npm run test && npm run docs && tsc",
     "lint": "tslint -c tslint.json 'src/**/*.ts'",
     "test": "npm run lint && karma start",
     "docs": "typedoc --out docs/ src/ --module commonjs --exclude **/*.spec.ts --mode modules"
@@ -17,7 +17,10 @@
     "browser",
     "js"
   ],
-  "author": "Denis Derkach",
+  "author": {
+    "name": "Denis Derkach",
+    "email": "derkachdeveloper@gmail.com"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/derkachdeveloper/dd-browser/issues"
@@ -40,5 +43,6 @@
   "directories": {
     "lib": "dist"
   },
-  "main": "dist/index.js"
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts"
 }
