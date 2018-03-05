@@ -1,6 +1,6 @@
 {
   "name": "dd-browser",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Browser helpers package",
   "scripts": {
     "build": "npm run lint && npm run test && npm run docs && tsc",
