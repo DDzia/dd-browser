@@ -1,8 +1,8 @@
 import { assert } from 'chai';
-import { Tree } from './Tree';
+import { Tree } from './tree';
 
 describe('Tree', () => {
-  describe('isChild', () => {
+  describe('isChildNode', () => {
     let root: HTMLElement;
     let child: HTMLElement;
     beforeEach(() => {
@@ -16,7 +16,7 @@ describe('Tree', () => {
       root.appendChild(child);
 
       // act
-      const result: boolean = Tree.isChild(root, child);
+      const result: boolean = Tree.isChildNode(root, child);
 
       // assert
       assert(result);
@@ -30,7 +30,7 @@ describe('Tree', () => {
       middle.appendChild(child);
 
       // act
-      const result: boolean = Tree.isChild(root, child);
+      const result: boolean = Tree.isChildNode(root, child);
 
       // assert
       assert(result);
@@ -38,25 +38,9 @@ describe('Tree', () => {
 
     it('Is not child', () => {
       // act
-      const result: boolean = Tree.isChild(root, child);
+      const result: boolean = Tree.isChildNode(root, child);
 
       // assert
-      assert(!result);
-    });
-
-    it('Invalid child', () => {
-      // act
-      const result: boolean = Tree.isChild(root, null as any);
-
-      // assert
-      assert(!result);
-    });
-
-    it('Invalid parent', () => {
-      // act
-      const result: boolean = Tree.isChild(null as any, child);
-
-      // asert
       assert(!result);
     });
   });

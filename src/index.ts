@@ -1,1 +1,2 @@
-export * from './Dom';
+export * from './dom';
+export * from './browser';
