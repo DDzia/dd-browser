@@ -1,1 +1,5 @@
 baseurl: /dd-browser
+
+include:
+  - "_*_.html"
+  - "_*_.*.html"
